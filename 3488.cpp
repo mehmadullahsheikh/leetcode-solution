@@ -1,5 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// store the indices of each number in a map
+// for example if nums=[1,2,3,1]
+// then mp={1:[0,3], 2:[1], 3:[2]}
+
+// for each query, we can find the indices of the number in the query and then find the minimum distance between the indices and the query index. We can use binary search to find the indices in log(n) time. with circular distance calculation. if there is only one index for the number in the query, then we can return -1.
+
 class Solution {
 public:
     vector<int> solveQueries(vector<int>& nums, vector<int>& queries) {

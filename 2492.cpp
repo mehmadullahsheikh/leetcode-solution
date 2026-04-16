@@ -1,5 +1,12 @@
 #include<bits/stdtr1c++.h>
 using namespace std;
+
+// minimum edge weight in the path from 1 to n. We can do dfs and keep track of minimum edge weight in the path.
+// 3<----1w---->1<----3w--->2<---5w-->4
+
+// 1-->3-->1-->2--4  ans=1
+  
+
 class Solution {
 public:
     int solve(int u,    unordered_map<int,vector<pair<int,int>>> &adj,int n,vector<bool> &visited){
